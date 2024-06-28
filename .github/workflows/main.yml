@@ -46,10 +46,10 @@ jobs:
 
         git clone https://github.com/alibaba/GraphScope.git
         cd GraphScope
-        python3 gsctl.py install-deps dev || true
-        python3 gsctl.py install-deps dev
+        # python3 gsctl.py install-deps dev || true
+        # python3 gsctl.py install-deps dev
 
-        echo "export PATH=/usr/local/opt/coreutils/libexec/gnubin:\$PATH" >> ~/.graphscope_env
+        # echo "export PATH=/usr/local/opt/coreutils/libexec/gnubin:\$PATH" >> ~/.graphscope_env
 
     - name: Setup tmate session
       if: true
