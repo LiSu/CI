@@ -75,7 +75,6 @@ jobs:
         # echo ${CC}
         # make sure the python's local bin is in PATH (by `pip install --user`)
         export PATH=$HOME/.local/bin:$HOME/Library/Python/${{ matrix.python-version }}/bin:$PATH
-
         python3 -m pip install numpy pandas "grpcio>=1.49" "grpcio-tools>=1.49" "mypy-protobuf>=3.4.0" wheel
     
     - name: Setup tmate session
