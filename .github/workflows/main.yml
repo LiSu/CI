@@ -73,7 +73,6 @@ jobs:
         . ~/.graphscope_env
         python3 -m pip install libclang
         # echo ${CC}
-
         # make sure the python's local bin is in PATH (by `pip install --user`)
         export PATH=$HOME/.local/bin:$HOME/Library/Python/${{ matrix.python-version }}/bin:$PATH
 
